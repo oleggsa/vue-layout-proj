@@ -15,12 +15,12 @@
           <div class="prices__content-table-prices-plan col-6">
             <h3 class="prices__content-table-prices-plan-header">Setup Your Plan</h3>
             <p class="prices__content-table-prices-plan-desqr">Accounts</p>
-            <div class="prices__content-table-prices-plan-row" v-for="item of 6">
+            <div class="prices__content-table-prices-plan-row" v-for="item of pricesOptions" :key="item.name">
               <Switch></Switch>
               <div class="prices__content-table-prices-plan-row-text">
-                <h3>AUTO PROMOTION</h3>
+                <h3>{{ item.name }}</h3>
                 <GradientRectangle></GradientRectangle>
-                <p>Auto view and interact with stories</p>
+                <p>{{ item.desqr }}</p>
               </div>
               <Counter></Counter>
             </div>
@@ -37,7 +37,18 @@
 <script>
 export default {
   name: "Prices",
-
+  data() {
+    return {
+      pricesOptions: [
+        {name: 'AUTO PROMOTION', desqr: 'Auto view and interact with stories'},
+        {name: 'AUTO LIKING', desqr: 'Auto liking other people\'s posts'},
+        {name: 'DIRECT MESSAGES', desqr: 'Manage your chats in one solution'},
+        {name: 'COMMENT TRACKER', desqr: 'Manage your comments in one solution'},
+        {name: 'SCHEDULED POSTING', desqr: 'Automatic posting at the right time'},
+        {name: 'HASHTAG GENERATOR', desqr: 'Drive the traffic to the page'}
+      ]
+    }
+  }
 }
 </script>
 
