@@ -1,7 +1,7 @@
 <template>
-  <label class="switch" @click="hideCounter">
-    <input type="checkbox">
-    <span class="slider round"></span>
+  <label class="switch">
+    <input type="checkbox" checked>
+    <span class="slider round" @click="hideCounter"></span>
   </label>
 </template>
 
@@ -10,7 +10,7 @@ export default {
   name: 'Switch',
   computed: {
     hideCounter(event){
-      console.log(event)
+      console.log('123')
     }
   }
 }

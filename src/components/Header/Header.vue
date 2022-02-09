@@ -1,7 +1,7 @@
 <template>
   <div class="header__wrapper">
     <div class="header__content">
-      <img src="../images/logo.png">
+      <img src="../../images/logo.png">
       <nav>
         <a href="#">Products</a>
         <a href="#">Why INSOCIAL?</a>
@@ -54,7 +54,7 @@ export default {
  nav a:first-child:after {
    margin-left: 15px;
    margin-right: 4px;
-   content: url('../icons/header-arrow.png');
+   content: url('../../icons/header-arrow.png');
  }
 nav a:not(:last-child) {
  margin-right: 33px;

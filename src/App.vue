@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import Header from './components/Header.vue'
+import Header from './components/Header/Header.vue'
 import GetStarted from "@/components/GetStarted";
 import Check from "@/components/Check";
 import Why from "@/components/Why";

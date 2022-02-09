@@ -114,7 +114,7 @@ export default {
             color: $primary
           }
           &-row {
-            margin-top: 4px;
+            margin-top: 4.5px;
             margin-left: 12px;
             & .switch {
               top: -16px;
