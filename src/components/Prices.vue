@@ -76,7 +76,7 @@ export default {
       background-color: #ffffff;
       margin-top: 49px;
       margin-left: 60px;
-      box-shadow: 0px 2px 8px rgba(3, 3, 3, 0.15);
+      box-shadow: 0 2px 8px rgba(3, 3, 3, 0.15);
       border-radius: 8px;
       &-prices {
         padding-top: 15px;
@@ -131,8 +131,5 @@ export default {
       }
     }
   }
-}
-.counter:not(:last-child) {
-
 }
 </style>

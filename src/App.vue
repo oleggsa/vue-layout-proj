@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style>
-
+@import "./assets/common/bootstrap-grid.min.css";
 * {
   margin: 0;
   padding: 0;
