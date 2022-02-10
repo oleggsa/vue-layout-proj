@@ -12,26 +12,28 @@
         <div class="get-started__content-btns">
           <MyButton>GET STARTED</MyButton>
           <div class="get-started__second-button">
-            <a href="#"><p>CHECK YOUR GROWTH</p></a>
+            <CustomButton type="secondary">CHECK YOUR GROWTH</CustomButton>
             <GradientRectangle></GradientRectangle>
           </div>
         </div>
       </div>
       <div class="get-started__images">
-        <img class="get-started__images-icons" src="../images/header-robot-icons.png" alt="icons">
-        <img class="get-started__images-robot" src="../images/header-robot.png" alt="robot">
-        <img class="get-started__images-bottom" src="../images/header-robot-under.png" alt="bottom">
+        <img class="get-started__images-icons" src="../../images/header-robot-icons.png" alt="icons">
+        <img class="get-started__images-robot" src="../../images/header-robot.png" alt="robot">
+        <img class="get-started__images-bottom" src="../../images/header-robot-under.png" alt="bottom">
       </div>
     </div>
   </section>
 </template>
 
 <script>
-
+import CustomButton from "@/components/UI/CustomButton";
 
 export default {
   name: "GetStarted",
-
+  components: {
+    CustomButton
+  }
 }
 </script>
 
@@ -40,7 +42,7 @@ export default {
   .get-started {
     &__wrapper {
       height: 550px;
-      background-image: url('../images/header-background.png');
+      background-image: url('../../images/header-background.png');
       background-repeat: no-repeat;
       margin-top: 80px;
     }
@@ -71,35 +73,35 @@ export default {
       position: relative;
       &-icons {
         left: 19px;
-        top: -357px;
+        top: -371px;
         position: absolute;
       }
       &-robot {
         left: 112px;
-        top: -272px;
+        top: -287px;
         position: absolute;
       }
       &-bottom {
         left: 155px;
-        top: 58px;
+        top: 44px;
         position: absolute;
       }
     }
     &__second-button {
       display: inline-block;
       margin-left: 68px;
-      font-size: 18px;
-      font-weight: 700;
-      color: $primary;
-      a {
-        color: $primary;
+      margin-top: 12px;
+      vertical-align: top;
+      & .button-secondary {
+        margin: 0;
+        padding-bottom: 2px;
       }
     }
   }
 
-  button {
+  .button-success {
     width: 225px;
-    height: 54px;
+    height: 53px;
   }
   .rectangle {
     height: 2px;
