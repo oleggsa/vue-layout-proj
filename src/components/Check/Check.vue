@@ -9,9 +9,7 @@
         </div>
       </div>
       <div class="check__content-search">
-        <div class="check__content-search-input">
-          <span class="check__content-search-input-text">Enter Instagram account...</span>
-        </div>
+        <input type="text" class="check__content-search-input" placeholder="Enter Instagram account...">
         <div class="check__content-search-btn">
           <a href="#"><span class="check__content-search-btn-text">PREVIEW GROWTH</span></a>
         </div>
@@ -21,17 +19,21 @@
       </div>
     </div>
     <div class="check__images">
-      <img class="check__images-robot" src="../images/check-robot.png" alt="robot">
-      <img class="check__images-phone" src="../images/check-phone.png" alt="phone">
-      <img class="check__images-bottom" src="../images/check-background.png" alt="bottom">
+      <img class="check__images-robot" src="../../images/check-robot.png" alt="robot">
+      <img class="check__images-phone" src="../../images/check-phone.png" alt="phone">
+      <img class="check__images-bottom" src="../../images/check-background.png" alt="bottom">
     </div>
   </div>
 </template>
 
 <script>
+import CustomButton from "@/components/UI/CustomButton";
 
 export default {
   name: "Check",
+  components: {
+    CustomButton
+  }
 }
 </script>
 
@@ -68,21 +70,14 @@ export default {
           border: 2px solid $primary;
           border-radius: 16px 0 0 16px;
           position: relative;
-          &-text {
-            position: absolute;
-            white-space: nowrap;
-            top: 17px;
-            left: 23px;
-            color: #B5B5B5;
-            font-size: 18px;
-            &:before {
-              content: url("../icons/check-insta.png");
-              transform: translate(-2px, -5px);
-              width: 32px;
-              height: 32px;
-              margin-right: 24px;
-              vertical-align: -50%;
-            }
+          background-image: url("../../icons/check-insta.png");
+          background-repeat: no-repeat;
+          background-position: 22px 17px;
+          padding-left: 79px;
+          font-size: 18px;
+          color: #B5B5B5;
+          &:focus {
+            color: black
           }
         }
         &-btn {
