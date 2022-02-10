@@ -29,7 +29,7 @@
         </WhyButton>
       </div>
       <div class="why__images">
-        <img src="../images/why-phone.png" alt="phone" class="why__images-phone">
+        <img src="../../images/why-phone.png" alt="phone" class="why__images-phone">
       </div>
       <MyButton>GET STARTED</MyButton>
     </div>
@@ -49,7 +49,7 @@ export default {
 .why {
   &__wrapper {
     height: 625px;
-    background-image: url('../images/why-background.png');
+    background-image: url('../../images/why-background.png');
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: 52px;
@@ -115,22 +115,22 @@ export default {
         }
       }
       &:first-child:before {
-        content: url('../icons/why-1.png');
+        content: url('../../icons/why-1.png');
       }
       &:nth-child(2):before {
-        content: url('../icons/why-2.png');
+        content: url('../../icons/why-2.png');
       }
       &:nth-child(3):before {
-        content: url('../icons/why-3.png');
+        content: url('../../icons/why-3.png');
       }
       &:nth-child(4):before {
-        content: url('../icons/why-4.png');
+        content: url('../../icons/why-4.png');
       }
       &:nth-child(5):before {
-        content: url('../icons/why-5.png');
+        content: url('../../icons/why-5.png');
       }
       &:nth-child(6):before {
-        content: url('../icons/why-6.png');
+        content: url('../../icons/why-6.png');
       }
     }
   }

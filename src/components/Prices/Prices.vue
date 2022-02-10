@@ -57,7 +57,7 @@ export default {
   &__wrapper {
     height: 770px;
     margin-top: 133px;
-    background: url("../images/prices-background.png") no-repeat center 95px;
+    background: url("../../images/prices-background.png") no-repeat center 95px;
   }
   &__content {
     margin: 0 140px;
