@@ -41,7 +41,7 @@ export default {
   .check {
     &__wrapper {
       height: 500px;
-      margin: 0 141px;
+      margin: -1px 141px 0;
     }
     &__content {
       &-header {

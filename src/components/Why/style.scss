@@ -1,0 +1,52 @@
+.why {
+  &__wrapper {
+    height: 625px;
+    background-image: url('../../images/why-background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 52px;
+  }
+  &__content {
+    &-wrapper {
+      width: 540px;
+      margin: 0 140px;
+      position: relative;
+    }
+    &-header {
+      display: inline-block;
+      & h1 {
+        font-size: 36px;
+        font-weight: 600;
+        color: #07166C;
+      }
+    }
+    &-desqr {
+      margin-top: 2px;
+      margin-left: 1px;
+      font-size: 18px;
+      width: 600px;
+      color: #07166C;
+    }
+    &-btn-group {
+      margin-left: 28px;
+      margin-top: 37px;
+    }
+
+  }
+  &__images-phone {
+    position: absolute;
+    top: 126px;
+    left: 740px;
+  }
+}
+
+.button-success {
+  width: 240px;
+  height: 55px;
+  margin-top: 16px;
+  margin-left: 170px;
+}
+.rectangle {
+  height: 4px;
+  margin-top: 2px;
+}
