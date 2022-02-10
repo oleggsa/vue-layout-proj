@@ -41,9 +41,6 @@ export default {
     }
   },
   methods: {
-    console(event) {
-      console.log(event)
-    },
     changeActiveSlide(id) {
       this.activeDataID = id;
     }
