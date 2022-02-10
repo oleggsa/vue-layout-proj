@@ -24,8 +24,8 @@ export default {
             {title: 'COMMENT TRACKER', link: '/comment-tracker', icon: require('@/icons/header-sub_comment.png')},
             {title: 'HASHTAG GENERATOR', link: '/hashtag-generator', icon: require('@/icons/header-sub-hashtag.png')},
           ]},
-        {title: 'Why INSOCIAL?', link: '/why'},
-        {title: 'Pricing', link: '/price'},
+        {title: 'Why INSOCIAL?', link: '#why'},
+        {title: 'Pricing', link: '#price'},
         {title: 'About', link: '/about'},
         {title: 'Contact Us', link: '/contact'}
       ]
@@ -35,11 +35,5 @@ export default {
 </script>
 
 <style scoped>
-.menu__items-list {
-  display: flex;
-}
-
-.menu__items-list ul:last-child {
-  margin-right: 26px;
-}
+@import 'style.scss';
 </style>

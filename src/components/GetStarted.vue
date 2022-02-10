@@ -71,17 +71,17 @@ export default {
       position: relative;
       &-icons {
         left: 19px;
-        top: -371px;
+        top: -357px;
         position: absolute;
       }
       &-robot {
         left: 112px;
-        top: -287px;
+        top: -272px;
         position: absolute;
       }
       &-bottom {
         left: 155px;
-        top: 43px;
+        top: 58px;
         position: absolute;
       }
     }

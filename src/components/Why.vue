@@ -1,5 +1,5 @@
 <template>
-  <div class="why__wrapper">
+  <div class="why__wrapper" id="why">
     <div class="why__content-wrapper">
       <div class="why__content-header">
         <h1>Why INSOCIAL?</h1>

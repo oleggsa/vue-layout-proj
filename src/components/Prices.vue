@@ -1,5 +1,5 @@
 <template>
-  <div class="prices__wrapper">
+  <div class="prices__wrapper" id="price">
     <div class="prices__content">
       <div class="prices__content-header">
         <div class="prices__content-header-header">

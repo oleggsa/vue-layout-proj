@@ -1,0 +1,8 @@
+.header__logo {
+  cursor: pointer;
+  text-decoration: none;
+  vertical-align: bottom;
+  & img {
+    margin-right: 48px;
+  }
+}
