@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <Header/>
+    <Header :isSticky="true"/>
     <GetStarted/>
     <Check/>
     <Why/>
@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import Header from './components/Header/Header.vue'
+import Header from './components/Header'
 import GetStarted from "@/components/GetStarted";
 import Check from "@/components/Check";
 import Why from "@/components/Why";

@@ -18,9 +18,9 @@
         </div>
       </div>
       <div class="get-started__images">
-        <img class="get-started__images-icons" src="../images/header-robot-icons.png">
-        <img class="get-started__images-robot" src="../images/header-robot.png">
-        <img class="get-started__images-bottom" src="../images/header-robot-under.png">
+        <img class="get-started__images-icons" src="../images/header-robot-icons.png" alt="icons">
+        <img class="get-started__images-robot" src="../images/header-robot.png" alt="robot">
+        <img class="get-started__images-bottom" src="../images/header-robot-under.png" alt="bottom">
       </div>
     </div>
   </section>
@@ -42,6 +42,7 @@ export default {
       height: 550px;
       background-image: url('../images/header-background.png');
       background-repeat: no-repeat;
+      margin-top: 80px;
     }
     &__content-wrapper {
       margin: 0 140px;

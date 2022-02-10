@@ -1,4 +1,4 @@
-import MyButton from "@/components/UI/MyButton";
+import MyButton from "@/components/UI/CustomButton";
 import GradientRectangle from "@/components/UI/GradientRectangle";
 import WhyButton from "@/components/UI/WhyButton";
 import WhyButtonActive from "@/components/UI/WhyButtonActive";
