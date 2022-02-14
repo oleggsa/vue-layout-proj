@@ -1,7 +1,11 @@
 <template>
-  <label class="switch">
+  <label v-if="state === 'disabled'" class="switch">
     <input type="checkbox" checked>
     <span class="slider round" @click="hideCounter"></span>
+  </label>
+  <label v-else class="switch" @click="hideCounter">
+    <input type="checkbox">
+    <span class="slider round"></span>
   </label>
 </template>
 
@@ -9,8 +13,14 @@
 export default {
   name: 'Switch',
   computed: {
-    hideCounter(event){
+    hideCounter(){
       console.log('123')
+    }
+  },
+  props: {
+    state: {
+      type: String,
+      default: true
     }
   }
 }
@@ -20,8 +30,8 @@ export default {
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 64px;
+  height: 36px;
   & input {
       opacity: 0;
       width: 0;
@@ -43,10 +53,10 @@ export default {
   &:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
+    height: 32px;
+    width: 32px;
+    left: 3px;
+    bottom: 2px;
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
@@ -62,9 +72,7 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  transform: translateX(27px);
 }
 
 .slider.round {
