@@ -1,0 +1,41 @@
+.prices__period {
+  width: 478px;
+  height: 56px;
+  border: 3px solid #DADADA;
+  border-radius: 8px;
+  margin-top: 4px;
+  &-popular{
+    &-border {
+      border: 3px solid $secondary;
+    }
+    &-label {
+      display: inline-block;
+      background: $secondary;
+      color: white;
+      margin-left: 8px;
+      vertical-align: 5px;
+      border-radius: 8px;
+      width: 88px;
+      height: 25px;
+      padding: 4px 8px;
+      font-weight: 500;
+      font-size: 14px;
+    }
+  }
+  & input {
+    height: 20px;
+    width: 20px;
+    margin-left: 17px;
+    margin-top: 15px;
+    &:checked {
+      background: red;
+    }
+  }
+  &-header {
+    display: inline-block;
+    vertical-align: 4px;
+    font-weight: 500;
+    font-size: 18px;
+    margin-left: 18px;
+  }
+}
