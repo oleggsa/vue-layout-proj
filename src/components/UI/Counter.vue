@@ -11,7 +11,7 @@ export default {
   name: 'Counter',
   data() {
     return {
-      counter: 0
+      counter: 1
     }
   }
 
@@ -34,7 +34,7 @@ div {
     border-radius: 22px;
   }
   &__digit {
-    margin: 0 10px;
+    margin: 0 13px;
     vertical-align: top;
     font-size: 16px;
     font-weight: 600;
