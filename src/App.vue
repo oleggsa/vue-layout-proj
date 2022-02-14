@@ -10,10 +10,10 @@
 
 <script>
 import Header from './components/Header'
-import GetStarted from "@/components/GetStarted/GetStarted";
-import Check from "@/components/Check/Check";
-import Why from "@/components/Why/Why";
-import Prices from "@/components/Prices/Prices";
+import GetStarted from "@/components/GetStarted";
+import Check from "@/components/Check";
+import Why from "@/components/Why";
+import Prices from "@/components/Prices";
 
 export default {
   name: 'App',
