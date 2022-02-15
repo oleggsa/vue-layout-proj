@@ -6,6 +6,8 @@
     <Why/>
     <Prices/>
     <Feedback/>
+    <Footer/>
+    <Copyright/>
   </div>
 </template>
 
@@ -16,6 +18,8 @@ import Check from "@/components/Check";
 import Why from "@/components/Why";
 import Prices from "@/components/Prices";
 import Feedback from "@/components/Feedback";
+import Footer from "@/components/Footer";
+import Copyright from "@/components/Copyright";
 
 export default {
   name: 'App',
@@ -25,7 +29,9 @@ export default {
     GetStarted,
     Check,
     Prices,
-    Feedback
+    Feedback,
+    Footer,
+    Copyright
   }
 }
 </script>
