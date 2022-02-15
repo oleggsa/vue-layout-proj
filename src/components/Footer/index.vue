@@ -12,13 +12,25 @@
         </div>
       </div>
       <div class="footer__content-products">Products
-        <div class="footer__content-products-list" v-for="item in products" :key="item">{{item}}</div>
+        <div class="footer__content-products-list" v-for="item in products" :key="item">
+          <a :href="item.link">
+            {{item.name}}
+          </a>
+        </div>
       </div>
       <div class="footer__content-about">About
-        <div class="footer__content-about-list" v-for="item in about" :key="item">{{item}}</div>
+        <div class="footer__content-about-list" v-for="item in about" :key="item">
+          <a :href="item.link">
+            {{item.name}}
+          </a>
+        </div>
       </div>
       <div class="footer__content-support">Support
-        <div class="footer__content-support-list" v-for="item in support" :key="item">{{item}}</div>
+        <div class="footer__content-support-list" v-for="item in support" :key="item">
+          <a :href="item.link">
+            {{item.name}}
+          </a>
+        </div>
       </div>
       <div class="footer__content-contacts">Get In Touch
         <div class="footer__content-contacts-list" v-for="item in getInTouch" :key="item">
@@ -46,9 +58,26 @@ export default {
   name: "index",
   data() {
     return {
-      products: ['Auto liking', 'Direct messages', 'Schedule posting', 'Comment tracker', 'Hashtag generator', 'Infulence search'],
-      about: ['Why INSOCIAL?', 'Our Team', 'Prices', 'Careers'],
-      support: ['FAQ', 'Contact us', 'Privacy policy', 'Terms of service '],
+      products: [
+        {name: 'Auto liking', link: '/liking'},
+        {name: 'Direct messages', link: '/dir-mes'},
+        {name: 'Schedule posting', link: '/posting'},
+        {name: 'Comment tracker', link: '/tracker'},
+        {name: 'Hashtag generator', link: '/hashtag'},
+        {name: 'Infulence search', link: '/search'}
+      ],
+      about: [
+        {name: 'Why INSOCIAL?', link: '/why'},
+        {name: 'Our Team', link: '/team'},
+        {name: 'Prices', link: '/prices'},
+        {name: 'Careers', link: '/career'},
+      ],
+      support: [
+        {name: 'FAQ', link: '/faq'},
+        {name: 'Contact us', link: '/contact-us'},
+        {name: 'Privacy policy', link: '/policy'},
+        {name: 'Terms of service', link: '/terms'},
+      ],
       getInTouch: [
         {name: 'General:', email: 'contact@insocial.io', icon: require('@/icons/footer-1.png')},
         {name: 'Media:', email: 'media@insocial.io', icon: require('@/icons/footer-2.png')},

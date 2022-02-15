@@ -1,9 +1,9 @@
 <template>
   <label v-if="state === 'disabled'" class="switch">
-    <input type="checkbox" @click="hideCounter">
+    <input type="checkbox">
     <span class="slider round"></span>
   </label>
-  <label v-else class="switch" @click="hideCounter">
+  <label v-else class="switch">
     <input type="checkbox" checked>
     <span class="slider round"></span>
   </label>
@@ -12,11 +12,6 @@
 <script>
 export default {
   name: 'Switch',
-  computed: {
-    hideCounter(){
-      console.log('123')
-    }
-  },
   props: {
     state: {
       type: String,

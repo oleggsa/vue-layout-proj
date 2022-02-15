@@ -20,6 +20,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../assets/variables";
+
   .button {
     &-success {
       display: inline-block;
