@@ -1,6 +1,6 @@
 <template>
   <button v-if="type === 'primary'" class="button-success">
-    <a href="#"><slot></slot></a>
+    <a href="#" class="button-success-text"><slot></slot></a>
   </button>
   <button v-else-if="type === 'secondary'" class="button-secondary">
     <a href="#"><slot></slot></a>
@@ -35,6 +35,9 @@ export default {
         border: 2px solid $primary;
         transition: 0.2ms all;
       }
+      &-text {
+        color: $primary;
+      }
     }
     &-secondary {
       font-weight: bold;
@@ -43,8 +46,5 @@ export default {
       border: none;
       background: none;
     }
-  }
-  a {
-    color: $primary;
   }
 </style>

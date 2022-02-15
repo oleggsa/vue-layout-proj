@@ -5,6 +5,7 @@
     <Check/>
     <Why/>
     <Prices/>
+    <Feedback/>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import GetStarted from "@/components/GetStarted";
 import Check from "@/components/Check";
 import Why from "@/components/Why";
 import Prices from "@/components/Prices";
+import Feedback from "@/components/Feedback";
 
 export default {
   name: 'App',
@@ -22,7 +24,8 @@ export default {
     Header,
     GetStarted,
     Check,
-    Prices
+    Prices,
+    Feedback
   }
 }
 </script>

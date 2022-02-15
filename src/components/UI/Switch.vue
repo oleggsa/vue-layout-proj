@@ -1,10 +1,10 @@
 <template>
   <label v-if="state === 'disabled'" class="switch">
-    <input type="checkbox" checked>
-    <span class="slider round" @click="hideCounter"></span>
+    <input type="checkbox" @click="hideCounter">
+    <span class="slider round"></span>
   </label>
   <label v-else class="switch" @click="hideCounter">
-    <input type="checkbox">
+    <input type="checkbox" checked>
     <span class="slider round"></span>
   </label>
 </template>
