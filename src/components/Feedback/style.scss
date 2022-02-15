@@ -55,21 +55,22 @@
     }
   }
   &__images {
+    position: relative;
     &-phone {
-      position: relative;
-      right: -739px;
-      top: -490px;
+      position: absolute;
+      right: 162px;
+      bottom: -15px;
     }
     &-bottom {
-      position: relative;
-      right: -631px;
-      top: -579px;
+      position: absolute;
+      right: 65px;
+      bottom: -49px;
       z-index: -2;
     }
     &-robot {
-      position: relative;
-      right: -746px;
-      top: -1162px;
+      position: absolute;
+      right: -24px;
+      bottom: 360px;
     }
   }
 }
