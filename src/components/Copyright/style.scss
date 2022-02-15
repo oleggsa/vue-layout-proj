@@ -1,0 +1,21 @@
+.copyright {
+  &__wrapper {
+    height: 64px;
+    padding: 19px 140px 21px 150px;
+  }
+  &__socials {
+    display: inline-block;
+    vertical-align: center;
+    & img {
+      margin-right: 23px;
+      &:nth-child(2) {
+        vertical-align: -2px;
+      }
+    }
+  }
+  &__text {
+    display: inline-block;
+    font-size: 18px;
+    float: right;
+  }
+}

@@ -1,3 +1,4 @@
+@import "../../assets/variables";
 
 .get-started {
   &__wrapper {
@@ -20,7 +21,7 @@
     }
     &-desqr {
       font-size: 24px;
-      color: #07166C;
+      color: $primary;
       margin-top: 60px;
       line-height: 29px;
     }

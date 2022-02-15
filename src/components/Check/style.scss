@@ -1,0 +1,101 @@
+@import "../../assets/variables";
+
+.check {
+  &__wrapper {
+    height: 500px;
+    margin: -1px 141px 0;
+  }
+  &__content {
+    &-header {
+      margin-top: 10px;
+      &-header {
+        margin-top: 204px;
+        font-size: 36px;
+        font-weight: 600;
+        color: $primary;
+      }
+      &-group {
+        width: 393px;
+        font-size: 18px;
+      }
+      &-desqr {
+        margin-top: 3px;
+      }
+    }
+    &-search {
+      margin-top: 40px;
+      display: flex;
+      &-input {
+        display: inline-block;
+        width: 370px;
+        height: 70px;
+        border: 2px solid $primary;
+        border-radius: 16px 0 0 16px;
+        position: relative;
+        background-image: url("../../icons/check-insta.png");
+        background-repeat: no-repeat;
+        background-position: 22px 17px;
+        padding-left: 79px;
+        font-size: 18px;
+        color: #B5B5B5;
+        &:focus {
+          color: black
+        }
+      }
+      &-btn {
+        display: inline-block;
+        width: 230px;
+        height: 70px;
+        border: 2px solid $primary;
+        border-left: 0;
+        border-radius: 0 16px 16px 0;
+        background: #38D89A;
+        position: relative;
+        &-text {
+          color: $primary;
+          position: absolute;
+          white-space: nowrap;
+          top: 50%;
+          left: 50%;
+          text-align: center;
+          font-weight: bold;
+          font-size: 18px;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+    &-bottom {
+      font-size: 18px;
+      margin-top: 14px;
+      & span {
+        font-weight: bold;
+        color: $primary;
+      }
+    }
+  }
+  &__images {
+    position: relative;
+    &-robot, &-phone, &-bottom {
+      position: absolute;
+    }
+    &-robot {
+      right: -24px;
+      bottom: 213px;
+      z-index: 10;
+    }
+    &-phone {
+      right: 162px;
+      bottom: -159px;
+    }
+    &-bottom {
+      right: 65px;
+      bottom: -194px;
+      z-index: -10;
+    }
+  }
+}
+
+.rectangle {
+  height: 4px;
+  margin-top: 1px;
+}

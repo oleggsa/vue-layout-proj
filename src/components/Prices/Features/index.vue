@@ -15,14 +15,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.features__item {
-  margin: 5px;
-  font-size: 12px;
-  color: $primary;
-  width: 24%;
-  & img {
-    vertical-align: -4px;
-    margin-right: 8px;
-  }
-}
+@import "style";
 </style>

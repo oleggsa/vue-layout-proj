@@ -1,3 +1,5 @@
+@import "../../assets/variables";
+
 .why {
   &__wrapper {
     height: 625px;
@@ -17,7 +19,7 @@
       & h1 {
         font-size: 36px;
         font-weight: 600;
-        color: #07166C;
+        color: $primary;
       }
     }
     &-desqr {
@@ -25,7 +27,7 @@
       margin-left: 1px;
       font-size: 18px;
       width: 600px;
-      color: #07166C;
+      color: $primary;
     }
     &-btn-group {
       margin-left: 28px;

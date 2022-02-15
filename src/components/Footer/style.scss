@@ -1,0 +1,96 @@
+.footer {
+  &__wrapper {
+    height: 464px;
+    margin-top: 91px;
+    background: url("../../images/footer-bg.png") no-repeat;
+  }
+  &__content {
+    &-logo {
+      display: inline-block;
+      &-img {
+        display: inline-block;
+        margin-left: 120px;
+        margin-top: 183px;
+      }
+      &-text {
+        font-weight: 500;
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #ffffff;
+        margin-left: 125px;
+        line-height: 20px;
+      }
+    }
+    &-products,
+    &-about,
+    &-support,
+    &-contacts {
+      display: inline-block;
+      font-weight: bold;
+      font-size: 18px;
+      color: #FFFFFF;
+    }
+    &-products {
+      margin-left: 36px;
+      vertical-align: -54px;
+    }
+    &-about,
+    &-support{
+      margin-left: 48px;
+      vertical-align: 18px;
+    }
+    &-contacts {
+      margin-left: 45px;
+      vertical-align: -67px;
+    }
+    &-products-list,
+    &-about-list,
+    &-support-list {
+      font-weight: 500;
+      font-size: 16px;
+      text-transform: capitalize;
+      margin-top: 16px;
+      line-height: 20px;
+    }
+    &-contacts {
+      &-list {
+        font-weight: 500;
+        font-size: 16px;
+        margin-top: 8px;
+        margin-left: 1px;
+        & img {
+          vertical-align: -8px;
+          margin-right: 4px;
+        }
+        & span {
+          font-size: 14px;
+          margin-left: 8px;
+        }
+      }
+      &-chat {
+        font-weight: 600;
+        font-size: 18px;
+        text-transform: capitalize;
+        margin-top: 20px;
+
+        & img {
+          margin-right: 7px;
+          vertical-align: -3px;
+        }
+      }
+      &-schedule {
+        margin-top: 10px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+      }
+      &-methods {
+        margin-top: 8px;
+        margin-left: 4px;
+        & img {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
