@@ -59,6 +59,8 @@ export default {
     color: #696969;
     &-active {
       color: $primary;
+      background: #ffffff;
+      border-radius: 16px;
       &-mark {
         position: absolute;
         height: 60px;

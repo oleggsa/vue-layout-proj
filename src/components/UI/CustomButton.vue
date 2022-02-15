@@ -47,6 +47,9 @@ export default {
       margin: 16px 16px 16px 20px;
       border: none;
       background: none;
+      & a {
+        color: $primary;
+      }
     }
   }
 </style>

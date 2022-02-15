@@ -2,7 +2,7 @@
   <div class="prices__content-options-wrapper">
     <div v-for="item in pricesOptions" :key="item.name" class="prices__content-options">
       <div v-if="item.active === true">
-        <Switch @click="console()"></Switch>
+        <Switch></Switch>
         <div class="prices__content-text">
           <div class="prices__content-text-header">{{item.name}}</div>
           <GradientRectangle></GradientRectangle>
@@ -33,11 +33,6 @@ export default {
     pricesOptions: {
       type: Array,
       default: ''
-    }
-  },
-  methods: {
-    console () {
-      console.log(123)
     }
   }
 }

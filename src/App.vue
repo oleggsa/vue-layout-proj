@@ -38,12 +38,18 @@ export default {
 
 <style>
 @import "./assets/common/bootstrap-grid.min.css";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Montserrat, sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   width: 1440px;
   margin: 0 auto;

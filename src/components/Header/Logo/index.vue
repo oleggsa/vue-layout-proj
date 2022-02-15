@@ -1,5 +1,5 @@
 <template>
-  <img class="header__logo" src="../../../images/logo.png" alt="logo">
+  <a href="#"><img class="header__logo" src="../../../images/logo.png" alt="logo"></a>
 </template>
 
 <script>

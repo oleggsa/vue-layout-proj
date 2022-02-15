@@ -1,5 +1,5 @@
 <template>
-  <div class="feedback__wrapper">
+  <div class="feedback__wrapper" id="feedback">
     <div class="feedback__content">
       <div class="feedback__content-header">
         <p>Case Studies</p>
